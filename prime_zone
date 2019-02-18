@@ -1,0 +1,16 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     gate.first_name.net. gate.first_name.net. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      gate.first_name.net. 
+@       IN      A       192.168.3.5
+@       IN      AAAA    ::1
+gate    IN      A       192.168.3.5
+
