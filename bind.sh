@@ -13,6 +13,10 @@ sudo tee -a /etc/resolvconf/resolv.conf.d/tail << EOF
 domain first_name.net
 search nameDevOps.org
 nameserver 127.0.0.1
+
+domain first_name.net
+search nameDevOps.org
+nameserver 127.0.0.1
 EOF
 
 
@@ -20,6 +24,7 @@ mkdir /etc/rndc.key/
 git clone https://github.com/snap032/bind9.git
 cp bind9/rndc.conf /etc/rndc.key/
 cp bind9/named.conf /etc/rndc.key/
+cp bind9/named.conf.options /etc/bind/named.conf.options
 
 sudo cp /etc/bind/db.local /var/lib/bind/prime_zone
 
