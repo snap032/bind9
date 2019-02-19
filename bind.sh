@@ -25,6 +25,10 @@ git clone https://github.com/snap032/bind9.git
 cp bind9/rndc.conf /etc/rndc.key/
 cp bind9/named.conf /etc/rndc.key/
 cp bind9/named.conf.options /etc/bind/named.conf.options
+cp bind9/prime_zone /var/lib/bind/prime_zone
+cp bind9/reverse_zone /var/lib/bind/reverse_zone
+cp bind9/named.conf.local /etc/bind/named.conf.local
+
 
 sudo cp /etc/bind/db.local /var/lib/bind/prime_zone
 
